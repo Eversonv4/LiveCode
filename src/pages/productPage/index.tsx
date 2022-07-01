@@ -9,7 +9,7 @@ import {
   TitleInfo,
 } from "./styles";
 
-export default function ProductScreen() {
+export default function ProductScreen(props: any) {
   return (
     <Container>
       <SectionContainer>
@@ -24,6 +24,7 @@ export default function ProductScreen() {
             src={Data.product_picture}
             alt="shoes"
           />
+          <button onClick={props.changeColors}>helo</button>
         </SectionProduct>
         <ProductInfoSection />
       </SectionContainer>

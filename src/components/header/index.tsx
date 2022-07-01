@@ -1,5 +1,4 @@
 import { Data } from "@store/dummy_data";
-import { GlobalTheme } from "@shared/GlobalTheme";
 
 import {
   HeaderContainer,
@@ -11,7 +10,7 @@ import {
 
 export default function Header() {
   return (
-    <HeaderContainer theme={GlobalTheme}>
+    <HeaderContainer>
       <HeaderSection>
         <Picture src={Data.logo_company} />
         <HeaderNav>
