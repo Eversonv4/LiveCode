@@ -5,7 +5,7 @@ export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   border-bottom: 1px solid #b8b8b8;
-  background-color: ${(props) => props.theme.colors.productColors.optionOne};
+  background-color: ${(props) => props.theme.colors.backgroundHeader};
 `;
 
 export const HeaderSection = styled.section`
