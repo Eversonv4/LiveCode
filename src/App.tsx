@@ -1,5 +1,5 @@
 import Header from "@components/header";
-import ProductScreen from "@pages/productPage";
+import ProductPage from "@pages/productPage";
 import { GlobalStyle } from "@shared/globalStyle/GlobalStyle";
 import { ThemeProvider } from "styled-components";
 import { GlobalTheme } from "@shared/GlobalTheme";
@@ -7,29 +7,29 @@ import { GlobalTheme } from "@shared/GlobalTheme";
 import { useState } from "react";
 
 function App() {
-  const [defaultTheme, setDefaultTheme] = useState(false);
+  const [defaultTheme, setDefaultTheme] = useState<Boolean>(true);
+  let Theme: Object;
 
-  function toggleDefaultTheme() {
+  function toggleTheme() {
     setDefaultTheme(!defaultTheme);
     changeTheme();
   }
 
   function changeTheme() {
     if (defaultTheme) {
-      let Theme: Object = GlobalTheme[0];
+      Theme = GlobalTheme[0];
       return Theme;
     } else {
-      let Theme: Object = GlobalTheme[1];
+      Theme = GlobalTheme[1];
       return Theme;
     }
   }
 
-  console.log("Theme", changeTheme);
   return (
     <>
       <ThemeProvider theme={changeTheme}>
-        <Header />
-        <ProductScreen changeColors={toggleDefaultTheme} />
+        <Header themeState={defaultTheme} changeColors={toggleTheme} />
+        <ProductPage themeState={defaultTheme} />
         <GlobalStyle />
       </ThemeProvider>
     </>

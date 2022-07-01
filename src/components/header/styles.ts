@@ -8,6 +8,7 @@ export const HeaderContainer = styled.header`
   justify-content: center;
   border-bottom: 1px solid #b8b8b8;
   background-color: ${(props) => props.theme.colors.backgroundHeader};
+  color: ${(props) => props.theme.colors.fontColor};
 `;
 
 export const HeaderSection = styled.section`
@@ -18,6 +19,8 @@ export const HeaderSection = styled.section`
 `;
 
 export const HeaderNav = styled.nav`
+  margin-right: -6rem;
+
   & ul {
     display: flex;
   }
@@ -36,4 +39,14 @@ export const Picture = styled.img`
 export const TitleNotification = styled.span`
   display: flex;
   align-items: center;
+  cursor: pointer;
+
+  & :first-child {
+    margin-right: 30px;
+    cursor: pointer;
+  }
+
+  & :nth-child(2) {
+    margin-right: 15px;
+  }
 `;

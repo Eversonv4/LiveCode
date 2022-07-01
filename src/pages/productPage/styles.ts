@@ -6,13 +6,15 @@ export const Container = styled.main`
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: #d7f1f8;
+  background-color: ${(props) => props.theme.colors.backgroundMain};
+  color: ${(props) => props.theme.colors.fontColor};
 `;
 
 export const SectionContainer = styled.section`
   display: flex;
   justify-content: space-between;
   width: 1200px;
+  height: 100vh;
 `;
 
 export const SectionProduct = styled.div`

@@ -7,6 +7,7 @@ interface IColors {
 export const Container = styled.div`
   justify-content: space-between;
   width: 50%;
+  color: ${(props) => props.theme.colors.fontColor};
 `;
 
 export const OptionsColors = styled.div<IColors>`

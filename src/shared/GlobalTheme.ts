@@ -16,11 +16,11 @@ const GlobalTheme: Object[] = [
   },
   {
     colors: {
-      backgroundHeader: "#909",
-      backgroundMain: "#D7F1F8",
+      backgroundHeader: "#0D1721",
+      backgroundMain: "#38444D",
       actionButtons: "#CDC509",
-      fontColor: "#000000",
-      fontColorLight: "#9A9A9A",
+      fontColor: "#f0f0f0",
+      fontColorLight: "#cccccc",
       fontColorButton: "#FFFFFF",
       productColors: {
         optionOne: "#CDC509",

@@ -1,4 +1,11 @@
-import { Data } from "@store/dummy_data";
+import { FaAdjust } from "react-icons/fa";
+
+import {
+  LogoCompanyDark,
+  BellIconDark,
+  BellIcon,
+  LogoCompany,
+} from "@assets/index";
 
 import {
   HeaderContainer,
@@ -8,11 +15,15 @@ import {
   TitleNotification,
 } from "./styles";
 
-export default function Header() {
+export default function Header(props: any) {
   return (
     <HeaderContainer>
       <HeaderSection>
-        <Picture src={Data.logo_company} />
+        {props.themeState ? (
+          <Picture src={LogoCompany} />
+        ) : (
+          <Picture src={LogoCompanyDark} alt="logo company" />
+        )}
         <HeaderNav>
           <ul>
             <li>MENS</li>
@@ -22,7 +33,12 @@ export default function Header() {
           </ul>
         </HeaderNav>
         <TitleNotification>
-          <Picture src={Data.bell_icon} />
+          <FaAdjust onClick={props.changeColors} />
+          {props.themeState ? (
+            <Picture src={BellIcon} alt="bell icon" />
+          ) : (
+            <Picture src={BellIconDark} alt="bell icon dark" />
+          )}
           NOTIFICATIONS
         </TitleNotification>
       </HeaderSection>
