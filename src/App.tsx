@@ -16,12 +16,34 @@ function App() {
   }
 
   function changeTheme() {
+    // let validateStorage: boolean = await isLocalStorageActive();
+
+    // setDefaultTheme(validateStorage);
+    /*
+    localStorage.getItem("theme") === "false"
+      ? setDefaultTheme(false)
+      : setDefaultTheme(true);
+*/
     if (defaultTheme) {
+      localStorage.setItem("theme", "true");
       Theme = GlobalTheme[0];
       return Theme;
     } else {
+      localStorage.setItem("theme", "false");
       Theme = GlobalTheme[1];
       return Theme;
+    }
+  }
+
+  function isLocalStorageActive() {
+    let validateStorage = localStorage.getItem("theme") === null;
+    if (validateStorage) {
+      console.log("local storage", localStorage.getItem("theme"));
+      return true;
+    }
+
+    if (!validateStorage) {
+      return false;
     }
   }
 

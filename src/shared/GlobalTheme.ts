@@ -7,11 +7,6 @@ const GlobalTheme: Object[] = [
       fontColor: "#000000",
       fontColorLight: "#9A9A9A",
       fontColorButton: "#FFFFFF",
-      productColors: {
-        optionOne: "#CDC509",
-        optionTwo: "#555700",
-        optionThree: "#455E64",
-      },
     },
   },
   {
@@ -22,11 +17,6 @@ const GlobalTheme: Object[] = [
       fontColor: "#f0f0f0",
       fontColorLight: "#cccccc",
       fontColorButton: "#FFFFFF",
-      productColors: {
-        optionOne: "#CDC509",
-        optionTwo: "#555700",
-        optionThree: "#455E64",
-      },
     },
   },
 ];

@@ -45,8 +45,37 @@ export const TextParagraph = styled.p`
 
 export const ListSize = styled.ul`
   display: flex;
+  margin-bottom: 34px;
 
   & li {
     margin-right: 40px;
   }
+`;
+
+export const SpanDelivery = styled.span`
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+
+  & :first-child {
+    margin-right: 17px;
+  }
+`;
+
+export const ContainerButton = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & :first-child {
+    margin-right: 18px;
+  }
+`;
+
+export const SelectedNumber = styled.div`
+  height: 15px;
+  width: 5px;
+  background-color: ${(props) => props.theme.colors.fontColorLight};
+  margin-left: 5px;
 `;

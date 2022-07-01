@@ -15,10 +15,11 @@ export const SectionContainer = styled.section`
   justify-content: space-between;
   width: 1200px;
   height: 100vh;
+  margin-top: 55px;
 `;
 
 export const SectionProduct = styled.div`
-  width: 50%;
+  width: 70%;
 `;
 
 export const TitleInfo = styled.h3`

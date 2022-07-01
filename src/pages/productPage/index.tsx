@@ -24,7 +24,7 @@ export default function ProductPage(props: any) {
           </TitleInfo>
           <Picture
             width="100%"
-            height="466px"
+            height="500px"
             src={Data.product_picture}
             alt="shoes"
           />
