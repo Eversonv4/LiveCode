@@ -7,6 +7,7 @@ const GlobalTheme: DefaultTheme = {
     actionButtons: "#CDC509",
     fontColor: "#000000",
     fontColorLight: "#9A9A9A",
+    fontColorButton: "#FFFFFF",
     productColors: {
       optionOne: "#CDC509",
       optionTwo: "#555700",

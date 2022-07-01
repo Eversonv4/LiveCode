@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
   height: 85px;
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-bottom: 1px solid #b8b8b8;
   background-color: ${(props) => props.theme.colors.backgroundHeader};
 `;
@@ -12,7 +14,7 @@ export const HeaderSection = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 1200px;
 `;
 
 export const HeaderNav = styled.nav`
