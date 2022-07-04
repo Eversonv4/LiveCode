@@ -1,4 +1,4 @@
-const GlobalTheme: Object[] = [
+export const GlobalTheme: Object[] = [
   {
     colors: {
       backgroundHeader: "#ACDFEB",
@@ -20,5 +20,3 @@ const GlobalTheme: Object[] = [
     },
   },
 ];
-
-export { GlobalTheme };

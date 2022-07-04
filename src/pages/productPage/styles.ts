@@ -6,8 +6,8 @@ export const Container = styled.main`
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: ${(props) => props.theme.colors.backgroundMain};
-  color: ${(props) => props.theme.colors.fontColor};
+  background-color: ${({ theme }) => theme.colors.backgroundMain};
+  color: ${({ theme }) => theme.colors.fontColor};
 `;
 
 export const SectionContainer = styled.section`

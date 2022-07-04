@@ -7,8 +7,8 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #b8b8b8;
-  background-color: ${(props) => props.theme.colors.backgroundHeader};
-  color: ${(props) => props.theme.colors.fontColor};
+  background-color: ${({ theme }) => theme.colors.backgroundHeader};
+  color: ${({ theme }) => theme.colors.fontColor};
 `;
 
 export const HeaderSection = styled.section`

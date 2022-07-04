@@ -7,7 +7,7 @@ interface IColors {
 export const Container = styled.div`
   justify-content: space-between;
   width: 50%;
-  color: ${(props) => props.theme.colors.fontColor};
+  color: ${({ theme }) => theme.colors.fontColor};
 `;
 
 export const OptionsColors = styled.div<IColors>`
@@ -36,7 +36,7 @@ export const PriceSpan = styled.span`
 `;
 
 export const TextParagraph = styled.p`
-  color: ${(props) => props.theme.colors.fontColorLight};
+  color: ${({ theme }) => theme.colors.fontColorLight};
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 28px;
@@ -76,6 +76,6 @@ export const ContainerButton = styled.div`
 export const SelectedNumber = styled.div`
   height: 15px;
   width: 5px;
-  background-color: ${(props) => props.theme.colors.fontColorLight};
+  background-color: ${({ theme }) => theme.colors.fontColorLight};
   margin-left: 5px;
 `;
